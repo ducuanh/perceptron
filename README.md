@@ -26,11 +26,3 @@ The program is designed to demonstrate fundamental concepts in machine learning,
 
 ---
 
-## Usage
-
-### Command-line Execution
-
-The program can be run from the command line using the following syntax:
-
-```bash
-python perceptron.py <learning_rate> <train_set_file> <test_set_file>
