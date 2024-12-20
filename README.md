@@ -1,9 +1,36 @@
-# perceptron
-Celem jest napisanie programu, który pobiera następujące argumenty:
-a – stała uczenia,
-train-set – nazwa pliku zawierającego zbiór treningowy w postaci CSV,
-test-set – nazwa pliku zawierającego zbiór testowy w postaci CSV.
+# Perceptron Classifier for Iris Dataset
 
-Należy zaimplementować perceptron, który wykorzystując podany train-set oraz stałą uczenia, nauczy się (reguła delta) rozpoznawać 2 klasy - w tym wypadku na przykładzie pliku z irysami.
-Po nauce program ma podać procent poprawnie rozpoznanych kwiatów z test-setu oraz dodatkowo wyświetlić dokładność dla poszczególnych gatunków.
-Program ma dostarczać testowy interfejs (niekoniecznie graficzny), który umożliwia (zapętlone) podawanie przez użytkownika pojedynczych wektorów do klasyfikacji.
+## Overview
+
+This project implements a perceptron-based binary classifier that can distinguish between two classes of flowers from the Iris dataset. It uses the **delta rule** for training, and provides functionalities to:
+- Train the perceptron on a given training dataset.
+- Evaluate the perceptron's accuracy on a test dataset.
+- Allow real-time classification of input vectors provided by the user.
+
+The program is designed to demonstrate fundamental concepts in machine learning, including supervised learning, gradient-based updates, and the perceptron algorithm.
+
+---
+
+## Features
+
+1. **Training on CSV Dataset:**
+   - Accepts a training dataset (`train-set`) in CSV format.
+   - Uses a specified learning rate (`a`) to train the perceptron.
+
+2. **Evaluation:**
+   - Computes overall classification accuracy on a test dataset (`test-set`).
+   - Reports accuracy for each individual class.
+
+3. **Interactive Classification:**
+   - Allows the user to classify individual feature vectors through a simple text-based interface.
+
+---
+
+## Usage
+
+### Command-line Execution
+
+The program can be run from the command line using the following syntax:
+
+```bash
+python perceptron.py <learning_rate> <train_set_file> <test_set_file>
