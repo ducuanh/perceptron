@@ -25,4 +25,16 @@ The program is designed to demonstrate fundamental concepts in machine learning,
    - Allows the user to classify individual feature vectors through a simple text-based interface.
 
 ---
+## Implementation Details
+**Perceptron Algorithm:**
 
+   - The perceptron uses the delta rule to update weights and bias during training.
+   - Training stops after a fixed number of iterations or when the error is minimized.
+
+**Evaluation:**
+
+   - Classifies each sample in the test dataset and calculates the accuracy for the overall dataset and for each class.
+
+**Interactive Mode:**
+
+   - Provides a looped interface to classify user-provided feature vectors.
